@@ -8,9 +8,12 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "WGLViewContraller.h"
+#import "BackgroundViewController.h"
 
 @interface AppDelegate ()
 
+@property(nonatomic, strong) WGLViewContraller *wglVC;
 @end
 
 @implementation AppDelegate
@@ -22,7 +25,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 
     
-    ViewController *vc = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+//    ViewController *vc = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
 
 //    
 //    UITableViewController *vc0 = [[UITableViewController alloc] init];
@@ -34,14 +37,22 @@
     
     
 //    [self.window addSubview:vc.view];
-    self.window.rootViewController = vc;
+//    self.window.rootViewController = vc;
 
     [self.window makeKeyAndVisible];
-    
+
+    BackgroundViewController *bgVC = [[BackgroundViewController alloc] initWithNibName:@"BackgroundViewController" bundle:nil];
+    self.wglVC = [[WGLViewContraller alloc] initWithBundlePath:[[NSBundle mainBundle] bundlePath]];
+    self.wglVC.view.frame = [UIScreen mainScreen].bounds;
+    self.wglVC.view.userInteractionEnabled = YES;
 
     
-    
-    
+//    [bgVC addChildViewController:wglVC];
+    [bgVC.view addSubview:self.wglVC.view];
+    bgVC.view.clipsToBounds = YES;
+
+    self.window.rootViewController = bgVC;
+
 //    [self set]
     return YES;
 }

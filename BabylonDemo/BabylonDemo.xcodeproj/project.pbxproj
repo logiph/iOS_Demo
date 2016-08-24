@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2841B4691D6D3A8000818896 /* babylon.2.4.max.js in Resources */ = {isa = PBXBuildFile; fileRef = 2841B4681D6D3A8000818896 /* babylon.2.4.max.js */; };
+		2841B4701D6D6FE300818896 /* WGLViewContraller.m in Sources */ = {isa = PBXBuildFile; fileRef = 2841B46E1D6D6FE300818896 /* WGLViewContraller.m */; };
+		2841B4751D6D753A00818896 /* BackgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2841B4731D6D753A00818896 /* BackgroundViewController.m */; };
+		2841B4761D6D753A00818896 /* BackgroundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2841B4741D6D753A00818896 /* BackgroundViewController.xib */; };
+		2841B4781D6DAFB400818896 /* index1.html in Resources */ = {isa = PBXBuildFile; fileRef = 2841B4771D6DAFB400818896 /* index1.html */; };
 		284FD92D1D6C4868009AAD93 /* babylon.js in Resources */ = {isa = PBXBuildFile; fileRef = 284FD92A1D6C4868009AAD93 /* babylon.js */; };
 		284FD92E1D6C4868009AAD93 /* loaderCustoms.js in Resources */ = {isa = PBXBuildFile; fileRef = 284FD92B1D6C4868009AAD93 /* loaderCustoms.js */; };
 		284FD92F1D6C4868009AAD93 /* pep.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 284FD92C1D6C4868009AAD93 /* pep.min.js */; };
@@ -27,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2841B4681D6D3A8000818896 /* babylon.2.4.max.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = babylon.2.4.max.js; sourceTree = "<group>"; };
+		2841B46D1D6D6FE300818896 /* WGLViewContraller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGLViewContraller.h; sourceTree = "<group>"; };
+		2841B46E1D6D6FE300818896 /* WGLViewContraller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGLViewContraller.m; sourceTree = "<group>"; };
+		2841B4721D6D753A00818896 /* BackgroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundViewController.h; sourceTree = "<group>"; };
+		2841B4731D6D753A00818896 /* BackgroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundViewController.m; sourceTree = "<group>"; };
+		2841B4741D6D753A00818896 /* BackgroundViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundViewController.xib; sourceTree = "<group>"; };
+		2841B4771D6DAFB400818896 /* index1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index1.html; sourceTree = "<group>"; };
 		284FD92A1D6C4868009AAD93 /* babylon.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = babylon.js; sourceTree = "<group>"; };
 		284FD92B1D6C4868009AAD93 /* loaderCustoms.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = loaderCustoms.js; sourceTree = "<group>"; };
 		284FD92C1D6C4868009AAD93 /* pep.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = pep.min.js; sourceTree = "<group>"; };
@@ -64,6 +76,7 @@
 		284FD9291D6C4868009AAD93 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				2841B4681D6D3A8000818896 /* babylon.2.4.max.js */,
 				284FD92A1D6C4868009AAD93 /* babylon.js */,
 				284FD92B1D6C4868009AAD93 /* loaderCustoms.js */,
 				284FD92C1D6C4868009AAD93 /* pep.min.js */,
@@ -100,6 +113,11 @@
 				28F466BE1D6C474D00FD0111 /* LaunchScreen.storyboard */,
 				28F466C11D6C474D00FD0111 /* Info.plist */,
 				28F466B01D6C474C00FD0111 /* Supporting Files */,
+				2841B46D1D6D6FE300818896 /* WGLViewContraller.h */,
+				2841B46E1D6D6FE300818896 /* WGLViewContraller.m */,
+				2841B4721D6D753A00818896 /* BackgroundViewController.h */,
+				2841B4731D6D753A00818896 /* BackgroundViewController.m */,
+				2841B4741D6D753A00818896 /* BackgroundViewController.xib */,
 			);
 			path = BabylonDemo;
 			sourceTree = "<group>";
@@ -122,6 +140,7 @@
 				28F466CC1D6C476800FD0111 /* fresnel.js */,
 				28F466CD1D6C476800FD0111 /* index.css */,
 				28F466CE1D6C476800FD0111 /* index.html */,
+				2841B4771D6DAFB400818896 /* index1.html */,
 				28F466D11D6C476800FD0111 /* TropicalSunnyDay_ny.jpg */,
 				28F466D21D6C476800FD0111 /* TropicalSunnyDay_nz.jpg */,
 			);
@@ -186,6 +205,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				28F466DD1D6C476800FD0111 /* TropicalSunnyDay_nz.jpg in Resources */,
+				2841B4781D6DAFB400818896 /* index1.html in Resources */,
+				2841B4691D6D3A8000818896 /* babylon.2.4.max.js in Resources */,
 				28F466DC1D6C476800FD0111 /* TropicalSunnyDay_ny.jpg in Resources */,
 				28F466D41D6C476800FD0111 /* demo.js in Resources */,
 				28F466C01D6C474D00FD0111 /* LaunchScreen.storyboard in Resources */,
@@ -196,6 +217,7 @@
 				28F466D71D6C476800FD0111 /* fresnel.js in Resources */,
 				28F466D91D6C476800FD0111 /* index.html in Resources */,
 				28F466E21D6C477A00FD0111 /* ViewController.xib in Resources */,
+				2841B4761D6D753A00818896 /* BackgroundViewController.xib in Resources */,
 				28F466D61D6C476800FD0111 /* fog.js in Resources */,
 				28F466D51D6C476800FD0111 /* Flare.png in Resources */,
 				28F466D81D6C476800FD0111 /* index.css in Resources */,
@@ -210,7 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				28F466E11D6C477A00FD0111 /* ViewController.m in Sources */,
+				2841B4701D6D6FE300818896 /* WGLViewContraller.m in Sources */,
 				28F466B21D6C474C00FD0111 /* main.m in Sources */,
+				2841B4751D6D753A00818896 /* BackgroundViewController.m in Sources */,
 				28F466E41D6C479800FD0111 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
