@@ -32,40 +32,68 @@
                                     var canvas = document.getElementById('renderCanvas');
                                     var engine = new BABYLON.Engine(canvas, true);
                                     
-                                    var createScene = function() {
+                                    var createScene = function(eg) {
                                         // create a basic BJS Scene object
-                                        var scene = new BABYLON.Scene(engine);
+                                        var scene = new BABYLON.Scene(eg);
+                                    
+<!--                                        alert("hello world" + eg);-->
                                     
                                         scene.clearColor = new BABYLON.Color4(0, 0, 0, 0);
                                         scene.ambientColor = new BABYLON.Color3(0, 0, 0);
                                     
                                         // create a FreeCamera, and set its position to (x:0, y:5, z:-10)
                                         var camera = new BABYLON.FreeCamera('camera1', new BABYLON.Vector3(0, 5,-10), scene);
-                                        
+                                        // var camera = new BABYLON.WebVRFreeCamera("WVR", new BABYLON.Vector3(0, 5,-10), scene);
+
                                         // target the camera to scene origin
                                         camera.setTarget(BABYLON.Vector3.Zero());
+                                    
+                                        BABYLON.SceneLoader.ImportMesh("him", "./", "HelloWorld.babylon", scene, function (newMeshes, particleSystems, skeletons) {
+                                                                   var dude = newMeshes[0];
+                                                                   
+                                                                   dude.rotation.y = Math.PI;
+                                                                   dude.position = new BABYLON.Vector3(0, 0, 0);
+                                                                   
+<!--                                                                   scene.beginAnimation(skeletons[0], 0, 100, true, 1.0);-->
+                                                                   }),
+
                                         
                                         // attach the camera to the canvas
-                                        camera.attachControl(canvas, false);
+                                        // camera.attachControl(canvas, false);
+                                        // First, set the scene's activeCamera... to be YOUR camera.
+                                        scene.activeCamera = camera;
+                                        // Then attach the activeCamera to the canvas.
+                                        scene.activeCamera.attachControl(canvas, false);
                                         
                                         // create a basic light, aiming 0,1,0 - meaning, to the sky
                                         var light = new BABYLON.HemisphericLight('light1', new BABYLON.Vector3(0,1,0), scene);
                                         
                                         // create a built-in "sphere" shape; its constructor takes 5 params: name, width, depth, subdivisions, scene
-                                        var sphere = BABYLON.Mesh.CreateSphere('sphere1', 16, 2, scene);
-                                        
+                                        var sphere = BABYLON.Mesh.CreateSphere('sphere1', 16, 3, scene);
+                                        sphere.wireframe = true;
+                                    
                                         // move the sphere upward 1/2 of its height
                                         sphere.position.y = 3;
                                         
                                         // create a built-in "ground" shape; its constructor takes the same 5 params as the sphere's one
                                         var ground = BABYLON.Mesh.CreateGround('ground1', 6, 6, 2, scene);
+                                        ground.material = new BABYLON.StandardMaterial("texture1", scene);
+                                        ground.material.diffuseTexture = new BABYLON.Texture("TropicalSunnyDay_nz.jpg", scene);
+                                    
+                                        var box = BABYLON.Mesh.CreateBox("box", 1.0, scene, false, BABYLON.Mesh.DEFAULTSIDE);
+                                        var disc = BABYLON.Mesh.CreateDisc("disc", 2, 30, scene, false, BABYLON.Mesh.DEFAULTSIDE);
+                                        var cylinder = BABYLON.Mesh.CreateCylinder("cylinder", 3, 3, 3, 6, 1, scene, false, BABYLON.Mesh.DEFAULTSIDE);
+                                    
                                         
+                                        var assetsManager = new BABYLON.AssetsManager(scene);
+                                    
+                                    
                                         // return the created scene
                                         return scene;
                                     }
                                     
                                     
-                                    var scene = createScene();
+                                    var scene = createScene(engine);
                                     
                                     engine.runRenderLoop(function() {
                                                          scene.render();

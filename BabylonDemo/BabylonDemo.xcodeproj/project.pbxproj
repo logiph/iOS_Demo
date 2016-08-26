@@ -15,6 +15,10 @@
 		284FD92D1D6C4868009AAD93 /* babylon.js in Resources */ = {isa = PBXBuildFile; fileRef = 284FD92A1D6C4868009AAD93 /* babylon.js */; };
 		284FD92E1D6C4868009AAD93 /* loaderCustoms.js in Resources */ = {isa = PBXBuildFile; fileRef = 284FD92B1D6C4868009AAD93 /* loaderCustoms.js */; };
 		284FD92F1D6C4868009AAD93 /* pep.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 284FD92C1D6C4868009AAD93 /* pep.min.js */; };
+		2876C5991D6E95830085E2E8 /* HelloWorld.babylon in Resources */ = {isa = PBXBuildFile; fileRef = 2876C5981D6E95830085E2E8 /* HelloWorld.babylon */; };
+		2876C59B1D6E9A840085E2E8 /* simple.html in Resources */ = {isa = PBXBuildFile; fileRef = 2876C59A1D6E9A840085E2E8 /* simple.html */; };
+		2876C59D1D6E9BDA0085E2E8 /* simple.js in Resources */ = {isa = PBXBuildFile; fileRef = 2876C59C1D6E9BDA0085E2E8 /* simple.js */; };
+		28B029691D702DBF00B84A49 /* loader.js in Resources */ = {isa = PBXBuildFile; fileRef = 28B029681D702DBF00B84A49 /* loader.js */; };
 		28F466B21D6C474C00FD0111 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F466B11D6C474C00FD0111 /* main.m */; };
 		28F466BD1D6C474C00FD0111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F466BC1D6C474C00FD0111 /* Assets.xcassets */; };
 		28F466C01D6C474D00FD0111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28F466BE1D6C474D00FD0111 /* LaunchScreen.storyboard */; };
@@ -42,6 +46,10 @@
 		284FD92A1D6C4868009AAD93 /* babylon.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = babylon.js; sourceTree = "<group>"; };
 		284FD92B1D6C4868009AAD93 /* loaderCustoms.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = loaderCustoms.js; sourceTree = "<group>"; };
 		284FD92C1D6C4868009AAD93 /* pep.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = pep.min.js; sourceTree = "<group>"; };
+		2876C5981D6E95830085E2E8 /* HelloWorld.babylon */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HelloWorld.babylon; sourceTree = "<group>"; };
+		2876C59A1D6E9A840085E2E8 /* simple.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = simple.html; sourceTree = "<group>"; };
+		2876C59C1D6E9BDA0085E2E8 /* simple.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = simple.js; sourceTree = "<group>"; };
+		28B029681D702DBF00B84A49 /* loader.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = loader.js; sourceTree = "<group>"; };
 		28F466AD1D6C474C00FD0111 /* BabylonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabylonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F466B11D6C474C00FD0111 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28F466B31D6C474C00FD0111 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,6 +84,7 @@
 		284FD9291D6C4868009AAD93 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				28B029681D702DBF00B84A49 /* loader.js */,
 				2841B4681D6D3A8000818896 /* babylon.2.4.max.js */,
 				284FD92A1D6C4868009AAD93 /* babylon.js */,
 				284FD92B1D6C4868009AAD93 /* loaderCustoms.js */,
@@ -139,10 +148,13 @@
 				28F466CB1D6C476800FD0111 /* fog.js */,
 				28F466CC1D6C476800FD0111 /* fresnel.js */,
 				28F466CD1D6C476800FD0111 /* index.css */,
+				2876C5981D6E95830085E2E8 /* HelloWorld.babylon */,
 				28F466CE1D6C476800FD0111 /* index.html */,
 				2841B4771D6DAFB400818896 /* index1.html */,
+				2876C59A1D6E9A840085E2E8 /* simple.html */,
 				28F466D11D6C476800FD0111 /* TropicalSunnyDay_ny.jpg */,
 				28F466D21D6C476800FD0111 /* TropicalSunnyDay_nz.jpg */,
+				2876C59C1D6E9BDA0085E2E8 /* simple.js */,
 			);
 			path = Babylon_Res;
 			sourceTree = "<group>";
@@ -208,6 +220,8 @@
 				2841B4781D6DAFB400818896 /* index1.html in Resources */,
 				2841B4691D6D3A8000818896 /* babylon.2.4.max.js in Resources */,
 				28F466DC1D6C476800FD0111 /* TropicalSunnyDay_ny.jpg in Resources */,
+				28B029691D702DBF00B84A49 /* loader.js in Resources */,
+				2876C59B1D6E9A840085E2E8 /* simple.html in Resources */,
 				28F466D41D6C476800FD0111 /* demo.js in Resources */,
 				28F466C01D6C474D00FD0111 /* LaunchScreen.storyboard in Resources */,
 				284FD92D1D6C4868009AAD93 /* babylon.js in Resources */,
@@ -221,6 +235,8 @@
 				28F466D61D6C476800FD0111 /* fog.js in Resources */,
 				28F466D51D6C476800FD0111 /* Flare.png in Resources */,
 				28F466D81D6C476800FD0111 /* index.css in Resources */,
+				2876C59D1D6E9BDA0085E2E8 /* simple.js in Resources */,
+				2876C5991D6E95830085E2E8 /* HelloWorld.babylon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

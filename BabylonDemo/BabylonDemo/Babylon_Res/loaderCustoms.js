@@ -330,7 +330,6 @@ if (cameraClickableTag) {
     });
 
 
-    
     // Cameras
     camerasList.addEventListener("change", function () {
         if (scene) {

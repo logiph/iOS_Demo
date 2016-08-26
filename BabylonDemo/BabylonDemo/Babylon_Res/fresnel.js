@@ -4,8 +4,13 @@
     scene.clearColor = new BABYLON.Color4(0, 0, 0, 0);
     scene.ambientColor = new BABYLON.Color3(0, 0, 0);
     
- 
+    
     var camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 10, BABYLON.Vector3.Zero(), scene);
+    
+//    var camera = new BABYLON.FreeCamera('camera1', new BABYLON.Vector3(-15, 3, 0), scene);
+//    scene.activeCamera = camera;
+//    scene.activeCamera.attachControl(canvas, false);
+
     var material = new BABYLON.StandardMaterial("kosh", scene);
     var sphere1 = BABYLON.Mesh.CreateSphere("Sphere1", 32, 3, scene);
     var sphere2 = BABYLON.Mesh.CreateSphere("Sphere2", 32, 3, scene);

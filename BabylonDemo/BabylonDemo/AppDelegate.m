@@ -27,14 +27,11 @@
     
 //    ViewController *vc = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
 
-//    
 //    UITableViewController *vc0 = [[UITableViewController alloc] init];
 //    UINavigationController *vc1 = [[UINavigationController alloc] init];
 //    UITabBarController *vc2 = [[UITabBarController alloc] init];
 //    
 //    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-//
-    
     
 //    [self.window addSubview:vc.view];
 //    self.window.rootViewController = vc;
@@ -45,14 +42,14 @@
     self.wglVC = [[WGLViewContraller alloc] initWithBundlePath:[[NSBundle mainBundle] bundlePath]];
     self.wglVC.view.frame = [UIScreen mainScreen].bounds;
     self.wglVC.view.userInteractionEnabled = YES;
-
     
 //    [bgVC addChildViewController:wglVC];
     [bgVC.view addSubview:self.wglVC.view];
     bgVC.view.clipsToBounds = YES;
 
+//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:bgVC];
     self.window.rootViewController = bgVC;
-
+    
 //    [self set]
     return YES;
 }

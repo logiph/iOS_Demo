@@ -3,23 +3,7 @@
 var canvas = document.getElementById("renderCanvas");
 
 // UI
-var controlPanel = document.getElementById("controlPanel");
-var cameraPanel = document.getElementById("cameraPanel");
 var divFps = document.getElementById("fps");
-var aboutPanel = document.getElementById("aboutPanel");
-var enableDebug = document.getElementById("enableDebug");
-var status = document.getElementById("status");
-var fullscreen = document.getElementById("fullscreen");
-var touchCamera = document.getElementById("touchCamera");
-var deviceOrientationCamera = document.getElementById("deviceOrientationCamera");
-var gamepadCamera = document.getElementById("gamepadCamera");
-var virtualJoysticksCamera = document.getElementById("virtualJoysticksCamera");
-var anaglyphCamera = document.getElementById("anaglyphCamera");
-var camerasList = document.getElementById("camerasList");
-var toggleFsaa4 = document.getElementById("toggleFsaa4");
-var toggleFxaa = document.getElementById("toggleFxaa");
-var toggleBandW = document.getElementById("toggleBandW");
-var toggleSepia = document.getElementById("toggleSepia");
 
 var sceneChecked;
 

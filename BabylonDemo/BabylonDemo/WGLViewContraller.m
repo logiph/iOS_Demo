@@ -40,7 +40,7 @@
     [self.view addSubview:self.webview];
 
 
-    NSString *path = [NSString stringWithFormat:@"%@/%@", self.path, @"index1.html"];
+    NSString *path = [NSString stringWithFormat:@"%@/%@", self.path, @"simple.html"];
     NSString *content = [NSString stringWithContentsOfURL:[NSURL fileURLWithPath:path] encoding:NSUTF8StringEncoding error:nil];
     NSURL *baseURL = [NSURL fileURLWithPath:self.path];
 
